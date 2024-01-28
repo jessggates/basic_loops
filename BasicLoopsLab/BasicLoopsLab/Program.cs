@@ -50,29 +50,9 @@ Console.WriteLine("Goodbye!");
 Console.WriteLine();
 
 
-// question 3  (while loop for door code until it is correct)
-
 bool locked = true;
 string doorCode = "";
 
-while (locked == true) 
-{
-    Console.WriteLine("Enter the door code");
-    doorCode = Console.ReadLine();
-
-    if (doorCode == "13579")
-    {
-        Console.WriteLine("Welcome, come on in!");
-        locked = false;
-    }
-    if (doorCode != "13579")
-    {
-        Console.WriteLine("Wrong code, try again!");
-        Console.WriteLine();
-    }
-}
-
-Console.ReadKey();
 
 // question 4 (expanded on 3 - loop for door code, stop after 5 incorrect attempts)
 
@@ -101,4 +81,3 @@ while (locked == true)
     }
 } 
 
-Console.ReadKey();
