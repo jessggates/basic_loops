@@ -42,3 +42,22 @@ while (keepPlaying == "y");
 Console.WriteLine("Goodbye!");
 Console.WriteLine();
 
+
+bool locked = true;
+string doorCode = "";
+
+while (locked == true)
+{
+    Console.WriteLine("Enter the door code");
+    doorCode = Console.ReadLine();
+
+    if (doorCode == "13579")
+    {
+        Console.WriteLine("Welcome, come on in!");
+        locked = false;
+    }
+    if (doorCode != "13579")
+    {
+        Console.WriteLine("Wrong code, try again!");
+    }
+}
